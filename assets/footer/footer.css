@@ -1,0 +1,43 @@
+body {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+  font-weight: 500;
+}
+footer {
+  bottom: 0;
+  color: #808080;
+  position: absolute;
+  width: 100%;
+}
+footer p,
+a,
+address {
+  color: #808080;
+  font-size: 12px;
+}
+footer h6 {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  text-transform: uppercase;
+}
+.social .fa {
+  color: #808080;
+  font-size: 15px;
+  padding: 5px 5px;
+}
+footer ul li {
+  display: block;
+  list-style: none;
+}
+footer ul {
+  padding-left: 0;
+}
+footer ul li a {
+  color: #808080;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #85bc23 !important;
+  text-decoration: none;
+}
