@@ -6,28 +6,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="header.css" />
+
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <title>Header</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    
   </head>
+
   <body>
-    <div class="navbar">
-      <div class="dropdown">
-        <button class="dropbtn">
-          Services
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div>
-      <a href="#home">Company</a>
-      <a href="#news">Library</a>
-      <a href="#news">Contact Us</a>
-    </div>
+    <header>
+        <div class="navbar navbar-expand-md navbar-light bg-light mb-4" role="navigation">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                  <img src="../../img/logo.png" alt="OSF Academy Logo" height="36">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">                
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                                <li class="dropdown-item dropdown">
+                                    <a class="dropdown-toggle" id="dropdown1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Product Categories</a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown1-1">
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Accessories</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Alcohol</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Art</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Books</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Drink</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Electronics</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Flowers & Plants</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Food</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Gadgets</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Garden</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Grocery</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Home</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Jewelry</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Kids & Baby</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Men's Fashion</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Mobile</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Motorcycles</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Movies</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Music</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Office</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Pets</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Romantic</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Sport</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Toys</a></li>                            
+                                    </ul>
+                                </li>
+                                 <li class="dropdown-item dropdown">
+                                    <a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sale</a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown2-1">
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Accessories</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Alcohol</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Art</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Books</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Drink</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Electronics</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Flowers & Plants</a></li>
+                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Food</a></li>	
+                                    </ul>
+                                 </li>
+                             </ul>
+                            </li>         
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Company</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Library</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Contact Us</a>
+                        </li>			
+                        
+                    </ul>
+            
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="../../img/search.svg" alt="seach" />
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="../../img/user.svg" alt="login" />
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="../../img/heart.svg" alt="favorited" />
+                            <span class="badge badge-success">1</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="../../img/search.svg" alt="seach" />
+                            <span class="badge badge-success">0</span>
+                        </a>
+                    </li>
+                </ul>             
+            </div>
+            </div>
+    </header>
+    
+    <script src="header.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </body>
+  
 </html>
