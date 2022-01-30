@@ -1,0 +1,25 @@
+.container {
+  position: relative;
+}
+.container img {
+  position: absolute;
+  padding: 10px 12px;
+  pointer-events: none;
+  color: #434240;
+}
+
+.container a {
+  color: #85bc23;
+  text-decoration: none;
+}
+
+.container a:hover {
+  color: #85bc23 !important;
+  text-decoration: underline;
+}
+
+.container input.form-control {
+  background: url(../img/search.svg) no-repeat scroll 410px 3px;
+  border-radius: 50px !important;
+  padding-right: -30px;
+}
