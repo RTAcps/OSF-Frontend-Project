@@ -23,15 +23,12 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
         <div class="navbar navbar-expand-md navbar-light bg-light mb-4" role="navigation">
+            <a class="navbar-brand" href="/">
+              <img src="../../img/logo.png" alt="OSF Academy Logo" height="62">
+            </a>
             <div class="container">
-                <a class="navbar-brand" href="#">
-                  <img src="../../img/logo.png" alt="OSF Academy Logo" height="36">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">                
@@ -96,26 +93,26 @@
                             <a class="nav-link" href="#home">Contact Us</a>
                         </li>                        
                     </ul>
-
-                    <ul>
-                    <li class="nav-item select">
-                        <select class="form-select" aria-label="Default select example">
-                          <option value="EN" selected>EN</option>
-                          <option value="ES">ES</option>
-                          <option value="FR">FR</option>
-                          <option value="PT">PT-BR</option>
-                        </select>
-                      </li>
-                      <li class="nav-item select">
-                        <select class="form-select" aria-label="Default select example">
-                          <option value="usdollar" selected>$USD</option>
-                          <option value="euro">€EUR</option>
-                          <option value="cadollar">$CAD</option>
-                          <option value="ukpound">£GBP</option>
-                        </select>
-                      </li>
-            
                 </div>
+                
+                    <div class="row"> 
+                        <div class="col-sm-3">           
+                        <select class="custom-select" aria-label="Default select">
+                          <option value="1" selected>EN</option>
+                          <option value="2">ES</option>
+                          <option value="3">FR</option>
+                          <option value="4">PT-BR</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3">
+                        <select class="custom-select" aria-label="Default select example">
+                          <option value="1" selected>$USD</option>
+                          <option value="2">€EUR</option>
+                          <option value="3">$CAD</option>
+                          <option value="4">£GBP</option>
+                        </select>
+                    </div>                  
+                
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#">

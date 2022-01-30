@@ -1,9 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container h1,
+.container h2 {
+  color: #45413e;
+  font-weight: 700;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.container h1 {
+  border-bottom: 1px solid #bdbdbd;
+  font-size: 5em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container h1 span {
+  background: #ffffff;
+  padding: 0 10px;
+}
+
+.container h2 {
+  font-size: 1em;
+  font-weight: 700;
+}
+
 .container {
   position: relative;
 }
 .container img {
   position: absolute;
-  padding: 10px 12px;
+  padding: 10rem 12rem;
   pointer-events: none;
   color: #434240;
 }
@@ -19,7 +54,7 @@
 }
 
 .container input.form-control {
-  background: url(../img/search.svg) no-repeat scroll 410px 3px;
+  background: url(../img/search.svg) no-repeat scroll center right;
   border-radius: 50px !important;
   padding-right: -30px;
 }

@@ -6,37 +6,61 @@
   padding: 0;
 }
 
-header .navbar .dropdown-toggle,
-header .navbar .dropdown-menu a {
-  color: #434240;
-  cursor: pointer;
-  float: left;
-  font-size: 16px;
-  padding: 14px 16px;
-  text-align: center;
-  text-decoration: none;
+.header {
+  display: flex;
+  justify-content: space-around;
 }
 
-header .navbar .dropdown-item.active,
-header .navbar .dropdown-item:active {
-  color: inherit;
-  text-decoration: none;
-  background-color: inherit;
+.header .nav-item {
+  color: #b0b0b0 !important;
 }
 
-header .navbar .dropdown-item:focus,
-header .navbar .dropdown-item:hover {
+.header .nav-item:hover {
   background-color: #233b45;
   color: #ffffff;
-  text-decoration: none;
 }
 
-header .nav-item:hover {
+.header .dropdown-content {
+  background-color: #233b45;
+  display: none;
+  position: absolute;
+  min-width: 100%;
+  z-index: 1;
+}
+
+.header .nav-item:hover {
   border-bottom: 2px solid #85bc23;
 }
 
+.header .nav-item {
+  display: flex;
+  position: relative;
+}
+
+.header .nav-item li {
+  display: block;
+  list-style-type: none;
+  position: absolute;
+}
+
+.header select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+}
+
+.header .custom-select {
+  background: transparent
+    url("data:image/svg+xml;utf8,<svg fill='Gainsboro' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>")
+    100% 5px no-repeat;
+  border: none;
+  color: #bdbdbd;
+  font-size: 15px;
+}
+
 @media (min-width: 767px) {
-  header .navbar .dropdown-toggle:not(.nav-link)::after {
+  .header .navbar .dropdown-toggle:not(.nav-link)::after {
     display: inline-block;
     width: 0;
     height: 0;
@@ -48,19 +72,7 @@ header .nav-item:hover {
   }
 }
 
-/* .navbar {
-  background-color: #ffffff;
-  overflow: hidden;
-}
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: #434240;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+/* 
 
 .dropdown {
   float: left;
