@@ -1,0 +1,24 @@
+{
+  "name": "osf-frontend-project",
+  "version": "1.0.0",
+  "description": "Website created for OSF Academy, tutor Gorkem Akdur",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RTAcps/OSF-Frontend-Project.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "Rodrigo Teixeira de Andrade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RTAcps/OSF-Frontend-Project/issues"
+  },
+  "homepage": "https://github.com/RTAcps/OSF-Frontend-Project#readme"
+}
