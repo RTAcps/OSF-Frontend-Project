@@ -64,6 +64,11 @@ footer a:hover {
   text-decoration: none;
 }
 
+footer .social a:hover {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
 .hold .button {
   background-color: #ffffff;
   border-radius: 25px;

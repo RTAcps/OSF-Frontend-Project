@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
+:root {
+  --facebook: #4267b2;
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -12,10 +16,171 @@ body {
   width: 100%;
 }
 
-img {
+body {
+  text-align: center;
+}
+
+section.awSlider .carousel {
+  box-shadow: 0 0 05px rgba(1, 1, 1, 0.5);
+  display: table;
+  z-index: 2;
+}
+
+section.awSlider {
+  display: table;
+  position: relative;
+  user-select: none;
+}
+
+section.awSlider:hover > img {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+section .awSlider img {
+  object-fit: fill;
+  pointer-events: none;
+}
+
+section .awSlider > img {
+  filter: blur(1.8vw);
+  object-fit: fill;
+  opacity: 0.5;
+  position: absolute;
+  top: 30px;
+  transform: scale(1.1);
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.carousel-inner .item a img,
+.carousel-inner .item img {
+  height: 460px;
+  max-width: 150%;
   object-fit: cover;
 }
 
-.carousel {
-  width: 1000px;
+.textFollow {
+  text-align: center;
+}
+
+.textFollow h5 {
+  font-size: 13px;
+}
+
+.textFollow p {
+  font-size: 9px;
+}
+
+.follow {
+  border: 2px solid var(--facebook);
+  border-radius: 50px;
+  color: var(--facebook);
+  height: 35px;
+  width: 150px;
+}
+
+.follow .fa {
+  color: var(--facebook);
+}
+
+.follow:hover,
+.follow a:hover {
+  background-color: var(--facebook);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 50px !important;
+  box-shadow: 0 1px 3px 3px rgba(255, 255, 255, 1);
+  color: #ffffff;
+  font-size: 2.5em;
+  height: 50px;
+  width: 200px;
+}
+
+.btn a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.btn a:hover {
+  color: #85bc23 !important;
+  text-decoration: none;
+}
+
+section.awSlider > .first-slide {
+  text-align: left !important;
+}
+
+.grid2-item h3,
+.grid2-item p {
+  color: #ffffff;
+  text-align: center;
+}
+
+.grid2-item h3 {
+  font-size: 70px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+.grid2-item p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 50px;
+  text-transform: uppercase;
+}
+
+.grid2-item .text {
+  background-color: #85bc23;
+  border-radius: 5px;
+  height: 250px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 200px;
+}
+
+.grid2-item img {
+  filter: opacity(5%);
+  max-height: 150px;
+  max-width: 150px;
+  position: relative;
+  right: 1%;
+  bottom: 35%;
+}
+
+.grid2-item .img {
+  height: 1000px;
+  position: relative;
+  width: 100%;
+}
+
+.container .popular {
+  background-color: #262a32;
+  color: #ffffff;
+}
+
+.container .popular h2 {
+  border-bottom: 1px solid #bdbdbd;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  text-align: center;
+  width: 80%;
+}
+
+.container .popular h2 span {
+  background-color: #262a32;
+  padding: 0 10px;
+}
+
+.container .fmk {
+  background-color: #45413e;
+  color: #ffffff;
 }

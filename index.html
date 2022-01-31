@@ -1,159 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OSF ecommerce</title>
 
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../../css/cookie.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
-    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-  </head>
-
-  <body>
+<body>
     <header>
-      <iframe
-        width="100%"
-        height="300"
-        frameborder="0"
-        scrolling="no"
-        src="assets/header/header.html"
-      ></iframe>
+        <iframe width="100%" height="150" frameborder="0" scrolling="no" src="assets/header/header.html"></iframe>
     </header>
 
     <main>
-      <section class="awSlider">
-        <div class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target=".carousel" data-slide-to="0" class="active"></li>
-            <li data-target=".carousel" data-slide-to="1"></li>
-            <li data-target=".carousel" data-slide-to="2"></li>
-          </ol>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-8">
+                <section class="awSlider">
+                    <div class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target=".carousel" data-slide-to="0" class="active"></li>
+                            <li data-target=".carousel" data-slide-to="1"></li>
+                            <li data-target=".carousel" data-slide-to="2"></li>
+                        </ol>
 
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <img src="./img/carousel1.png" alt="First slide" />
-              <div class="carousel-caption d-none d-md-block first-slide">
-                <h3>Control and manage any device with cloud solutions</h3>
-                <p>
-                  Improve business performance and the user experience with the
-                  right mix of IoT technology and processes
-                </p>
-                <button class="btn">
-                  <a href="">View More</a>
-                </button>
-              </div>
-            </div>
-            <div class="item">
-              <img src="./img/carousel2.png" alt="Second slide" />
-              <div class="carousel-caption d-none d-md-block second-slide">
-                <h3>Control and manage any device with cloud solutions</h3>
-                <p>
-                  Improve business performance and the user experience with the
-                  right mix of IoT technology and processes
-                </p>
-                <button class="btn">
-                    <a href="">View More</a>
-                  </button>
-                </button>
-              </div>
-            </div>
-            <div class="item">
-              <img src="./img/carousel3.png" alt="Third slide" />
-              <div class="carousel-caption d-none d-md-block third-slide">
-                <h3>Control and manage any device with cloud solutions</h3>
-                <p>
-                  Improve business performance and the user experience with the
-                  right mix of IoT technology and processes
-                </p>
-                <button class="btn">
-                    <a href="">View More</a>
-                  </button>
-              </div>
-            </div>
-          </div>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="./img/carousel1.png" alt="First slide" />
+                                <div class="carousel-caption d-none d-md-block first-slide">
+                                    <h3>Control and manage any device with cloud solutions</h3>
+                                    <p>
+                                        Improve business performance and the user experience with the
+                                        right mix of IoT technology and processes
+                                    </p>
+                                    <button class="btn">
+                                        <a href="">View More</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./img/carousel2.png" alt="Second slide" />
+                                <div class="carousel-caption d-none d-md-block second-slide">
+                                    <h3>Control and manage any device with cloud solutions</h3>
+                                    <p>
+                                        Improve business performance and the user experience with the
+                                        right mix of IoT technology and processes
+                                    </p>
+                                    <button class="btn">
+                                        <a href="">View More</a>
+                                    </button>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./img/carousel3.png" alt="Third slide" />
+                                <div class="carousel-caption d-none d-md-block third-slide">
+                                    <h3>Control and manage any device with cloud solutions</h3>
+                                    <p>
+                                        Improve business performance and the user experience with the
+                                        right mix of IoT technology and processes
+                                    </p>
+                                    <button class="btn">
+                                        <a href="">View More</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
 
-          <!-- Controls -->
-          <a
-            class="left carousel-control"
-            href=".carousel"
-            role="button"
-            data-slide="prev"
-          >
-            <span
-              class="glyphicon glyphicon-chevron-left"
-              aria-hidden="true"
-            ></span>
-            <span class="sr-only">Prev</span>
-          </a>
-          <a
-            class="right carousel-control"
-            href=".carousel"
-            role="button"
-            data-slide="next"
-          >
-            <span
-              class="glyphicon glyphicon-chevron-right"
-              aria-hidden="true"
-            ></span>
-            <span class="sr-only">Next</span>
-          </a>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Prev</span>
+                        </a>
+                        <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="grid2-item">
+                            <div class="text">
+                                <h3>55%</h3>
+                                <p>Summer Sales</p>
+                                <img src="./img/palmTree.png" alt="Palm Tree">
+                            </div>
+                        </div>
+                    </div>  
+                    <br> <br> <br> <br> <br> <br> <br>  <br> <br> <br> <br> <br> <br>   
+                    <div class="col-md-6">                 
+                        <div class="grid3-item">
+                            <div class="textFollow">
+                            <h5>Follow us on Facebook</h5>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit
+                            </p>
+                            <button class="follow">
+                                <i class="fab fa-facebook-f" aria-hidden="true">
+                                    <a href="https://www.facebook.com/" class="fa" target="_blank"rel="noopener">
+                                        Follow
+                                    </a>
+                                    </i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
+    </div>
+</div>
+
+<div class="container">
+    <section class="popular">
+        <br />
+        <br />
+        <h2><span>Popular Items</span></h2>
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-md3">
+                <img src="./img/PopItems1.png" alt="">
+                <p>Kristina Dam Oak Table With White Marble Top</p>
+                <p>$ 799.55</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="./img/PopItems2.png" alt="">
+                <p>Hay - About A Lounge  Chair AAL 93</p>
+                <input type="text" placeholder="$659.55"></input>
+                <button>Buy now</button>
+            </div>
+            <div class="col-sm-4">
+                <img src="./img/PopItems3.png" alt="">
+                <p>Activate Facial Mask and Charcoal Soap </p>
+                <p>$ 129.55</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="./img/PopItems4.png" alt="">
+                <p>Vitra Cork Stool B, Cork - Design Within Reach</p>
+                <p>$ 870.95</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="./img/PopItems5.png" alt="">
+                <p>Hay - About A Lounge  Chair AAL 93</p>
+                <p>$ 659.55</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="./img/PopItems6.png" alt="">
+                <p>TORY DESK CALENDAR</p>
+                <p>$ 410.99</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="./img/PopItems7.png" alt="">
+                <p>CH445 Wing Chair on  SUITE NY</p>
+                <p>$ 330.55</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="./img/PopItems8.png" alt="">
+                <p>My dragons are  misbehaving again. Unbelieveable!</p>
+                <div class="pop-8">
+                    <img src="./img/PopItems8-icon.png" alt="">
+                    <p>5h ago</p>
+                </div>                
+            </div>
+        </div>    
+        <div class="load-more">
+            <button>
+                <p>load more</p>
+                <img src="./img/U-icon.png" alt="">
+            </button>
+        </div>
+    </section>
+</div>
+
+<div class="container">
+    <div class="banner">
+        <img src="./img/bannerOSFtheme.png" alt="Banner OSF Theme">
+        <h2>Banner OSF Theme</h2>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>    
+    </div>
+</div>
+
+<div class="container">
+    <section class="featured-products">
+        <br />
+        <br />
+        <h2><span>Featured Products</span></h2>
+        <p>Unde omnis iste natus error sit voluptatem</p>
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-3">
+                <img src="./img/featuredImg1.png" alt="">
+                <p>Kristina Dam Oak Table  With White Marble</p>
+                <p>Awesome</p>
+            </div>
+            <div class="col-3">
+                <img src="./img/featuredImg2.png" alt="">
+                <p>Kristina Dam Oak Table  With White Marble</p>
+                <p>Marketing</p>
+            </div>
+            <div class="col-3">
+                <img src="./img/featuredImg3.png" alt="">
+                <p>Kristina Dam Oak Table  With White Marble</p>
+                <p>Awesome</p>
+            </div>
+            <div class="col-3">
+                <img src="./img/featuredImg4.png" alt="">
+                <p>Hezy Theme</p>
+                <p>Marketing</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="container">
+    <section class="fmk">
+        <div class="row">
+            <div class="col">
+                <img src="./img/focus.png   " alt="">
+                <h6>Focus</h6>
+                <p>Our unwavering focus on superior service delivery and building </p>
+            </div>
+            <div class="col">
+                <img src="./img/method.png" alt="">
+                <h6>Method</h6>
+                <p>A standardized methodology designed to deliver measurable busin</p>
+            </div>
+        <div class="col">
+                <img src="./img/knowledge.png" alt="">
+                <p>Knowledge</p>
+                <p>A highly skilled, proactive workforce that reliably improves ea</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+        <div class="popup-wrapper">
+            <div class="popup">
+                <div class="popup-close">X</div>
+                <div class="popup-content">
+                    <h2>Asas</h2>
+                    <p>dqdqS</p>
+                    <a href="./assets/pages/Cookies.html"></a>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
-      <iframe
-        width="100%"
-        height="350"
-        frameborder="0"
-        scrolling="no"
-        src="assets/footer/footer.html"
-      ></iframe>
+        <iframe width="100%" height="350" frameborder="0" scrolling="no" src="assets/footer/footer.html"></iframe>
     </footer>
 
     <script src="./js/script.js"></script>
+    <script src="./js/cookie.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

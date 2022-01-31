@@ -24,62 +24,75 @@
 
   <body>
     <header class="header">
-        <div class="navbar navbar-expand-md navbar-light bg-light mb-4" role="navigation">
-            <a class="navbar-brand" href="/">
-              <img src="../../img/logo.png" alt="OSF Academy Logo" height="62">
-            </a>
+        <nav class="navbar navbar-expand-md fixed-top">
             <div class="container">
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">                
-                            <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown1">
-                                <li class="dropdown-item dropdown">
-                                    <a class="dropdown-toggle" id="dropdown1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Product Categories</a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdown1-1">
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Accessories</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Alcohol</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Art</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Books</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Drink</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Electronics</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Flowers & Plants</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Food</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Gadgets</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Garden</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Grocery</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Home</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Jewelry</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Kids & Baby</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Men's Fashion</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Mobile</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Motorcycles</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Movies</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Music</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Office</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Pets</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Romantic</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Sport</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Toys</a></li>                            
-                                    </ul>
-                                </li>
-                                 <li class="dropdown-item dropdown">
-                                    <a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sale</a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdown2-1">
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Accessories</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Alcohol</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Art</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Books</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Drink</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Electronics</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Flowers & Plants</a></li>
-                                        <li class="dropdown-item"><a href="../../assets/pages/NotFound404.html">Food</a></li>	
-                                    </ul>
-                                 </li>
-                             </ul>
-                            </li>         
-                        </li>
+              <a class="navbar-brand" href="/"><img src="../../img/logo.png" alt="OSF Academy Logo" height="40px;"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto d-md-flex d-block flex-row mx-md-auto mx-0">
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Services
+                    </a>
+                    <!-- Huge Dropdown Menu -->
+                    
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <div class="container">
+                        <div class=row>
+                          <div class="col-md-6">
+                            <h6 class="dropdown-header" style="color:#ffffff;">Product Categories</h6>
+                            <div class="d-md-flex w-100 d-block">
+                              <div class="p-2 justify-content-start w-100">
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Accessories</a>
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Alcohol</a>
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Art</a>
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Books</a>
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Drink</a>
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Electronics</a>
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Flowers & Plants</a>
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Food</a>
+                              </div>
+                              <div class="p-2 justify-content-center w-100">
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Gadgets</a>
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Garden</a>
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Grocery</a>
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Home</a>
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Jewelry</a>
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Kids & Baby</a>
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Men's Fashion</a>
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Mobile</a>
+                              </div>
+                              <div class="p-2 justify-content-end w-100">
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Motorcycles</a>
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Movies</a>
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Music</a>
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Office</a>
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Pets</a>
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Romantic</a>
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Sport</a>
+                                <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Toys</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3" style="text-align: left;">
+                            <h6 class="dropdown-header" style="color:#ffffff;">SALE</h6>
+                            <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Accessories</a>
+                            <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Alcohol</a>
+                            <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Art</a>
+                            <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Books</a>
+                            <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Drink</a>
+                            <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Electronics</a>
+                            <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Flowers & Plants</a>
+                            <a class="dropdown-item" href="../../assets/pages/NotFound404.html">Food</a>
+                          </div>
+                          <div class="col-md-3">
+                            <img src="images/megamenu.png" style="width: 300px; height:300px; border-radius: 5px;">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                         
                         <li class="nav-item">
                             <a class="nav-link" href="#home">Company</a>
