@@ -4,6 +4,7 @@
   "description": "Website created for OSF Academy, tutor Gorkem Akdur",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --config webpack.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
